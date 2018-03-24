@@ -73,13 +73,13 @@ if char == "1":
                     input()
                     print("You hope you can do better on your next mission.")
                     input()
-                    soldierxp = 100
                     Sxp = random.randint(10,100)
                     print("You have earned "+ str(Sxp) + " xp")
                     soldierxp = soldierxp + Sxp
                     print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameDone = True
+                    #This is ending 1
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         input()
@@ -111,7 +111,6 @@ if char == "1":
             input()
             print("You leveled up!")
             input()
-            level += 1
             print("Do you approach the being or not? (Enter 'yes' or 'no')")
             appr = input()
             if appr == "yes":
@@ -141,6 +140,11 @@ if char == "1":
                     input()
                     print("You are dead.")
                     input()
+                    Sxp = random.randint(10,100)
+                    print("You have earned "+ str(Sxp) + " xp")
+                    soldierxp = soldierxp + Sxp
+                    print("Current xp needed for next level: " + str(100 - Sxp))
+                    input()
                     isGameOver = True
                 if choice == "run":
                     print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
@@ -148,6 +152,11 @@ if char == "1":
                     print("You make it just in time. You clamber into your ship and slam the door behind you.")
                     input()
                     print("The beast cannot enter, and you blast off, postponing your mission.")
+                    input()
+                    Sxp = random.randint(10,100)
+                    print("You have earned "+ str(Sxp) + " xp")
+                    soldierxp = soldierxp + Sxp
+                    print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameDone = True
 
