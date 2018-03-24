@@ -10,8 +10,9 @@ soldierinv = []
 healerinv = []
 
 name = input("Enter your name: ")
-char = input()
 print("*During the adventure, press 'Enter' to continue after reading each line.*")
+input()
+char = "1"
 if char == "1":
     print("You are " + name + ", and you have just landed on a strange planet.")
     input()
@@ -136,8 +137,6 @@ if char == "1":
             print("Luckily, you have your gun out and cocked, and you fire just in time.")
             input()
             print("The beast falls to the ground with a deafening thud. It lets out a faint moan, and then appears to be dead.")
-            input()
-            print("You leveled up!")
             input()
             print("Do you approach the being or not? (Enter 'yes' or 'no')")
             appr = input()
