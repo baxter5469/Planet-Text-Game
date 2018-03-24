@@ -36,10 +36,29 @@ if char == "1":
             print("The being falls to the ground with a deafening thud. It lets out a faint moan, and then appears to be dead.")
             print("Do you approach the being or not? (Enter 'yes' or 'no')")
             appr = input()
-            if appr == 'yes':
+            if appr == "yes":
                 print("You decide to walk up to the being. As you approach it, you recognize it to be somewhat of a lion, except much bigger.")
                 print("The oversized lion's mouth is hanging open, and you can see it's long row of sharp teeth.")
                 print("You shudder with fear, even though the beast is clearly dead.")
+                print("Do you investigate the beast further or walk away? (Enter 'beast' or 'walk')")
+                invest = input()
+                if invest == "walk":
+                    print("")
+            if appr == "no":
+                print("You decide to walk away instead of investigating the beast.")
+                print("It was a lucky decision, because as you walk away, you hear a low growl from behind you.")
+                print("Do you turn around to look or do you just run away? (Enter 'look' or 'run')")
+                choice = input()
+                if choice == "look":
+                    print("You turn around to look at the beast, you see the lion on its feet. 'Turns out it wasn't dead,' you think to yourself.")
+                    print("Unfortunately, that was the last thing you would ever think, because the beast jumps at you.")
+                    print("It has a very powerful jump, and you have no time to react. You black out on impact.")
+                    print("You are dead.")
+                    isGameOver = True
+                if choice == "run":
+                    print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
+                    print("")
+
 
 
 
