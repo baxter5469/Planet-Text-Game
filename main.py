@@ -79,7 +79,7 @@ if char == "1":
                     print("You have earned "+ str(Sxp) + " xp")
                     soldierxp = soldierxp + Sxp
                     print("Current xp needed for next level: " + str(100 - Sxp))
-                    Input()
+                    input()
                     isGameDone = True
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
