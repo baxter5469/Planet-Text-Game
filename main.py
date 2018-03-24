@@ -1,3 +1,8 @@
+'''
+The Void v0.11
+By Andrew Ault, Isaac Brown, Walden Hart
+3/24/18
+'''
 import random
 isGameOver = False
 isGameDone = False
