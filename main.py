@@ -104,6 +104,8 @@ if char == "1":
                     print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameDone = True
+                    del dir
+                    del choice
                 if choice == "turn":
                     print("You go back towards where you entered the city.")
                     input()
@@ -117,6 +119,8 @@ if char == "1":
                     print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameOver = True
+                    del dir
+                    del choice
             if dir == "left":
                 print("You decide to go left. As soon as you turn the corner, a robot jumps at you and you black out on impact.")
                 input()
@@ -128,6 +132,8 @@ if char == "1":
                 print("Current xp needed for next level: " + str(100 - Sxp))
                 input()
                 isGameOver = True
+                del dir
+                del choice
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         input()
@@ -157,6 +163,8 @@ if char == "1":
             print("Current xp needed for next level: " + str(100 - Sxp))
             input()
             isGameOver = True
+            del dir
+            del choice
         if choice == "gun":
             print("You were always a cautious person, so just in case, you have your gun at the ready.")
             input()
@@ -213,6 +221,10 @@ if char == "1":
                     print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameOver = True
+                    del dir
+                    del choice
+                    del appr
+                    del invest
                 if choice == "run":
                     print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
                     input()
@@ -226,6 +238,10 @@ if char == "1":
                     print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameDone = True
+                    del dir
+                    del choice
+                    del appr
+                    del invest
 
 if char == "2":
     print("insert story")
