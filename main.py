@@ -86,11 +86,21 @@ if char == "1":
                     input()
                     print("You are dead.")
                     input()
+                    Sxp = random.randint(10,100)
+                    print("You have earned "+ str(Sxp) + " xp")
+                    soldierxp = soldierxp + Sxp
+                    print("Current xp needed for next level: " + str(100 - Sxp))
+                    input()
                     isGameOver = True
             if dir == "left":
                 print("You decide to go left. As soon as you turn the corner, a robot jumps at you and you black out on impact.")
                 input()
                 print("You are dead.")
+                input()
+                Sxp = random.randint(10,100)
+                print("You have earned "+ str(Sxp) + " xp")
+                soldierxp = soldierxp + Sxp
+                print("Current xp needed for next level: " + str(100 - Sxp))
                 input()
                 isGameOver = True
     if dir == "left":
@@ -112,6 +122,11 @@ if char == "1":
             print("Before you have time to pull the trigger, you see a flash of purple light and everything goes black.")
             input()
             print("You are dead.")
+            Sxp = random.randint(10,100)
+            print("You have earned "+ str(Sxp) + " xp")
+            soldierxp = soldierxp + Sxp
+            print("Current xp needed for next level: " + str(100 - Sxp))
+            input()
             isGameOver = True
         if choice == "gun":
             print("You were always a cautious person, so just in case, you have your gun at the ready.")
