@@ -195,6 +195,22 @@ if char == "1":
                 invalid = True
                 if invest == "walk":
                     appr = "no"
+                if invest == "beast":
+                    print("You decide to investigate the beast further.")
+                    input()
+                    print("You walk around to the back end of the beast. As you pass by it's behind, you see its tail twitch.")
+                    input()
+                    print("'It's not dead!' you think to yourself. A wave of fear washes over you.")
+                    input()
+                    print("In your panic, you can only think of one thing to do: run.")
+                    input()
+                    print("You run back to your ship as fast as you can, climb in, shut the door, and blast off.")
+                    input()
+                    print("An unsuccessful mission, but certainly an eventful one.")
+                    input()
+                    print("You hope next mission will have a better ending.")
+                    input()
+                    isGameDone = True
             elif appr == "no":
                 print("You decide to walk away instead of investigating the beast.")
                 input()
@@ -224,7 +240,6 @@ if char == "1":
                     del dir
                     del choice
                     del appr
-                    del invest
                 elif choice == "run":
                     print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
                     input()
@@ -241,7 +256,6 @@ if char == "1":
                     del dir
                     del choice
                     del appr
-                    del invest
 
 elif char == "2":
     print("insert story")
