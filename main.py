@@ -4,6 +4,8 @@ isGameDone = False
 level = 1
 dir = 0
 dir1 = 0
+soldierxp = 100
+healerxp = 100
 soldierinv = []
 healerinv = []
 
