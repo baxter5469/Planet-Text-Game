@@ -231,8 +231,10 @@ if char == "2":
     print("insert story")
     print("insert story")
     dir1 = input()
-while overcheck != True
-    if isGameOver == True:
-        print("Thanks for playing, hope you enjoyed!")
-    if isGameDone == True:
-        print("Thanks for playing, hope you enjoyed! You can continue your adventure in the next episode.")
+
+if isGameOver == True:
+    print("Thanks for playing, hope you enjoyed!")
+if isGameDone == True:
+    print("Thanks for playing, hope you enjoyed! You can continue your adventure in the next episode.")
+
+input()
