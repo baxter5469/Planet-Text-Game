@@ -1,3 +1,4 @@
+import keyboard
 isGameOver = False
 isGameDone = False
 level = 1
