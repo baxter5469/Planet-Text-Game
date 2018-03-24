@@ -32,8 +32,7 @@ if char == "1":
         input()
         print("You go through the city gates, onto the first road. The city is completely deserted.")
         input()
-        print("Do you get creeped out and turn around or do you continue on? (Enter 'leave' or 'continue'")
-        input()
+        print("Do you get creeped out and turn around or do you continue on? (Enter 'leave' or 'continue')")
         choice = input()
         if choice == "leave":
             print("You decide it isn't safe and you turn around to leave.")
