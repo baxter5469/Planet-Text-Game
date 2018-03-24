@@ -59,7 +59,7 @@ if char == "1":
             print("Your only choice now is to continue into the city.")
             input()
             choice = "continue"
-        elif choice == "continue":
+        if choice == "continue":
             print("You pay no attention to your first instincts, and you continue on deeper into the city.")
             input()
             print("You come to a dead end. Do you go left or right? (Enter 'left' or 'right')")
