@@ -33,6 +33,7 @@ if char == "1":
             print("You come to a dead end. Do you go left or right? (Enter 'left' or 'right')")
             dir = input()
             if dir == 'right':
+                print()
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         print("Finally, you see something faintly in the distance. It appears to be approaching with great speed.")
