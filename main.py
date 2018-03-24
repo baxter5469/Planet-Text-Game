@@ -1,5 +1,6 @@
 isGameOver = False
 isGameDone = False
+level = 1
 dir = 0
 dir1 = 0
 soldierinv = []
@@ -15,6 +16,8 @@ if char == "1":
     print("You step out onto the yellow sand. Do you go left or right? (Enter 'left' or 'right')")
     dir = input()
     if dir == "right":
+        print("You decide to go right. After walking for a few minutes, what looks like a city comes into view.")
+        print("You see many tall buildings that look like they are made of steel and have no windows. It is nothing like your home planet's cities.")
         print("")
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
@@ -33,7 +36,9 @@ if char == "1":
             print("You were always a cautious person, so just in case, you have your gun at the ready.")
             print("As you watch, it suddenly advances with speed you have never seen before.")
             print("Luckily, you have your gun out and cocked, and you fire just in time.")
-            print("The being falls to the ground with a deafening thud. It lets out a faint moan, and then appears to be dead.")
+            print("The beast falls to the ground with a deafening thud. It lets out a faint moan, and then appears to be dead.")
+            print("You leveled up!")
+            level += 1
             print("Do you approach the being or not? (Enter 'yes' or 'no')")
             appr = input()
             if appr == "yes":
@@ -50,7 +55,7 @@ if char == "1":
                 print("Do you turn around to look or do you just run away? (Enter 'look' or 'run')")
                 choice = input()
                 if choice == "look":
-                    print("You turn around to look at the beast, you see the lion on its feet. 'Turns out it wasn't dead,' you think to yourself.")
+                    print("You turn around to look at the beast, you see the lion on its feet. 'Turns out my bullet wasn't effective,' you think to yourself.")
                     print("Unfortunately, that was the last thing you would ever think, because the beast jumps at you.")
                     print("It has a very powerful jump, and you have no time to react. You black out on impact.")
                     print("You are dead.")
@@ -58,7 +63,7 @@ if char == "1":
                 if choice == "run":
                     print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
                     print("You make it just in time. You clamber into your ship and slam the door behind you.")
-                    print("The beast cannot enter, and you blast off, aborting your mission.")
+                    print("The beast cannot enter, and you blast off, postponing your mission.")
                     isGameDone = True
 
 
