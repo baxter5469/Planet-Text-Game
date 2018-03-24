@@ -38,12 +38,12 @@ if char == "1":
             appr = input()
             if appr == "yes":
                 print("You decide to walk up to the being. As you approach it, you recognize it to be somewhat of a lion, except much bigger.")
-                print("The oversized lion's mouth is hanging open, and you can see it's long row of sharp teeth.")
+                print("The oversized lion's mouth is hanging open, and you can see its long row of sharp teeth.")
                 print("You shudder with fear, even though the beast is clearly dead.")
                 print("Do you investigate the beast further or walk away? (Enter 'beast' or 'walk')")
                 invest = input()
                 if invest == "walk":
-                    print("")
+                    appr = "no"
             if appr == "no":
                 print("You decide to walk away instead of investigating the beast.")
                 print("It was a lucky decision, because as you walk away, you hear a low growl from behind you.")
