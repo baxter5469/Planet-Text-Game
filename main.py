@@ -18,7 +18,20 @@ if char == "1":
     if dir == "right":
         print("You decide to go right. After walking for a few minutes, what looks like a city comes into view.")
         print("You see many tall buildings that look like they are made of steel and have no windows. It is nothing like your home planet's cities.")
-        print("")
+        print("You get closer to the city. Something doesn't feel right to you, but you can't place the feeling.")
+        print("Suddenly, it hits you. The city is completely silent.")
+        print("You go through the city gates, onto the first road. The city is completely deserted.")
+        print("Do you get creeped out and turn around or do you continue on? (Enter 'leave' or 'continue'")
+        choice = input()
+        if choice == "leave":
+            print("You decide it isn't safe and you turn around to leave.")
+            print("When you turn around, the gates are closed. A chill runs down your spine as you wonder how they got that way so quickly and so silently.")
+            print("Your only choice now is to continue into the city.")
+        if choice == "continue":
+            print("You pay no attention to your first instincts, and you continue on deeper into the city.")
+            print("You come to a dead end. Do you go left or right? (Enter 'left' or 'right')")
+            dir = input()
+            if dir == 'right':
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         print("Finally, you see something faintly in the distance. It appears to be approaching with great speed.")
