@@ -26,6 +26,7 @@ if char == "1":
         dir = input()
         if dir == "right" or dir == "left":
             invalid = False
+    invalid = True
     if dir == "right":
         print("You decide to go right. After walking for a few minutes, what looks like a city comes into view.")
         input()
@@ -42,6 +43,7 @@ if char == "1":
             choice = input()
             if choice == "leave" or choice == "continue":
                 invalid = False
+        invalid = True
         if choice == "leave":
             print("You decide it isn't safe and you turn around to leave.")
             input()
@@ -58,6 +60,7 @@ if char == "1":
                 dir = input()
                 if dir == "right" or dir == "left":
                     invalid = False
+            invalid = True
             if dir == 'right':
                 print("You decide to go right. As you walk down the deserted street, you begin to feel many people are watching you.")
                 input()
@@ -70,6 +73,7 @@ if char == "1":
                     choice = input()
                     if choice == "turn" or choice == "continue":
                         invalid = False
+                invalid = True
                 if choice == "continue":
                     print("You decide to continue on. As you walk farther along, the air becomes foggy, to the point where you can't even see a foot in front of you.")
                     input()
@@ -129,6 +133,7 @@ if char == "1":
             choice = input()
             if choice == "wait" or choice == "gun":
                 invalid = False
+        invalid = True
         if choice == "wait":
             print("You decide to wait until it gets closer to do anything.")
             input()
@@ -159,6 +164,7 @@ if char == "1":
                 appr = input()
                 if appr == "yes" or appr == "no":
                     invalid = False
+            invalid = True
             if appr == "yes":
                 print("You decide to walk up to the being. As you approach it, you recognize it to be somewhat of a lion, except much bigger.")
                 input()
@@ -171,6 +177,7 @@ if char == "1":
                     invest = input()
                     if invest == "beast" or invest == "walk":
                         invalid = False
+                invalid = True
                 if invest == "walk":
                     appr = "no"
             if appr == "no":
@@ -183,6 +190,7 @@ if char == "1":
                     choice = input()
                     if choice == "look" or choice == "run":
                         invalid = False
+                invalid = True
                 if choice == "look":
                     print("You turn around to look at the beast, you see the lion on its feet. 'Turns out my bullet wasn't effective,' you think to yourself.")
                     input()
