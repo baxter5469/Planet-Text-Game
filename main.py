@@ -79,7 +79,20 @@ if char == "1":
                     print("Current xp needed for next level: " + str(100 - Sxp))
                     input()
                     isGameDone = True
-                    #This is ending 1
+                if choice == "turn":
+                    print("You go back towards where you entered the city.")
+                    input()
+                    print("As you approach the entrance, a robot jumps out from behind the corner. You black out on impact.")
+                    input()
+                    print("You are dead.")
+                    input()
+                    isGameOver = True
+            if dir == "left":
+                print("You decide to go left. As soon as you turn the corner, a robot jumps at you and you black out on impact.")
+                input()
+                print("You are dead.")
+                input()
+                isGameOver = True
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         input()
