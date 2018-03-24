@@ -10,8 +10,6 @@ soldierinv = []
 healerinv = []
 
 name = input("Enter your name: ")
-print(name + ". That's a good name. Choose your character.")
-print("1: Soldier\n2: Healer")
 char = input()
 print("*During the adventure, press 'Enter' to continue after reading each line.*")
 if char == "1":
