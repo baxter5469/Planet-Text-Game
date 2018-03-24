@@ -1,4 +1,5 @@
 isGameOver = False
+isGameDone = False
 dir = 0
 dir1 = 0
 soldierinv = []
@@ -56,7 +57,9 @@ if char == "1":
                     isGameOver = True
                 if choice == "run":
                     print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
-                    print("")
+                    print("You make it just in time. You clamber into your ship and slam the door behind you.")
+                    print("The beast cannot enter, and you blast off, aborting your mission.")
+                    isGameDone = True
 
 
 
@@ -68,3 +71,5 @@ if char == "2":
     dir1 = input()
 if isGameOver == True:
     print("Thanks for playing, hope you enjoyed!")
+if isGameDone == True:
+    print("Thanks for playing, hope you enjoyed! You can continue your adventure in the next episode.")
