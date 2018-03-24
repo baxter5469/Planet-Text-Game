@@ -1,3 +1,4 @@
+import random
 isGameOver = False
 isGameDone = False
 level = 1
@@ -73,6 +74,12 @@ if char == "1":
                     input()
                     print("You hope you can do better on your next mission.")
                     input()
+                    soldierxp = 100
+                    Sxp = random.randint(10,100)
+                    print("You have earned "+ str(Sxp) + " xp")
+                    soldierxp = soldierxp + Sxp
+                    print("Current xp needed for next level: " + str(100 - Sxp))
+                    Input()
                     isGameDone = True
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
