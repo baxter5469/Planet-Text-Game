@@ -59,7 +59,7 @@ if char == "1":
             print("Your only choice now is to continue into the city.")
             input()
             choice = "continue"
-        if choice == "continue":
+        elif choice == "continue":
             print("You pay no attention to your first instincts, and you continue on deeper into the city.")
             input()
             print("You come to a dead end. Do you go left or right? (Enter 'left' or 'right')")
@@ -106,7 +106,7 @@ if char == "1":
                     isGameDone = True
                     del dir
                     del choice
-                if choice == "turn":
+                elif choice == "turn":
                     print("You go back towards where you entered the city.")
                     input()
                     print("As you approach the entrance, a robot jumps out at you from behind the corner. You black out on impact.")
@@ -121,7 +121,7 @@ if char == "1":
                     isGameOver = True
                     del dir
                     del choice
-            if dir == "left":
+            elif dir == "left":
                 print("You decide to go left. As soon as you turn the corner, a robot jumps at you and you black out on impact.")
                 input()
                 print("You are dead.")
@@ -134,7 +134,7 @@ if char == "1":
                 isGameOver = True
                 del dir
                 del choice
-    if dir == "left":
+    elif dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         input()
         print("Finally, you see something faintly in the distance. It appears to be approaching with great speed.")
@@ -165,7 +165,7 @@ if char == "1":
             isGameOver = True
             del dir
             del choice
-        if choice == "gun":
+        elif choice == "gun":
             print("You were always a cautious person, so just in case, you have your gun at the ready.")
             input()
             print("As you watch, it suddenly advances with speed you have never seen before.")
@@ -195,7 +195,7 @@ if char == "1":
                 invalid = True
                 if invest == "walk":
                     appr = "no"
-            if appr == "no":
+            elif appr == "no":
                 print("You decide to walk away instead of investigating the beast.")
                 input()
                 print("It was a lucky decision, because as you walk away, you hear a low growl from behind you.")
@@ -225,7 +225,7 @@ if char == "1":
                     del choice
                     del appr
                     del invest
-                if choice == "run":
+                elif choice == "run":
                     print("As soon as you hear the growl, your mind enters panic mode. You run as fast as you can towards your spaceship.")
                     input()
                     print("You make it just in time. You clamber into your ship and slam the door behind you.")
@@ -243,14 +243,14 @@ if char == "1":
                     del appr
                     del invest
 
-if char == "2":
+elif char == "2":
     print("insert story")
     print("insert story")
     dir1 = input()
 
 if isGameOver == True:
     print("Thanks for playing, hope you enjoyed!")
-if isGameDone == True:
+elif isGameDone == True:
     print("Thanks for playing, hope you enjoyed! You can continue your adventure in the next episode.")
 
 input()
