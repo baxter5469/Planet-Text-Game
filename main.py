@@ -1,11 +1,8 @@
-# put code here
-import random
-
-
-
 isGameOver = False
 dir = 0
 dir1 = 0
+soldierinv = []
+healerinv = []
 name = input("Enter your name: ")
 print(name + ". That's a good name. Choose your character.")
 print("1: Soldier\n2: Healer")
@@ -16,6 +13,8 @@ if char == "1":
     print("As your spaceship touches down, you look around you. There is nothing but desert for miles. It is like your planet, but much colder.")
     print("You step out onto the yellow sand. Do you go left or right? (Enter 'left' or 'right')")
     dir = input()
+    if dir == "right":
+        print("")
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         print("Finally, you see something faintly in the distance. It appears to be approaching with great speed.")
