@@ -1,4 +1,4 @@
-import keyboard
+import pygame
 isGameOver = False
 isGameDone = False
 level = 1
@@ -28,6 +28,7 @@ if char == "1":
             print("You decide it isn't safe and you turn around to leave.")
             print("When you turn around, the gates are closed. A chill runs down your spine as you wonder how they got that way so quickly and so silently.")
             print("Your only choice now is to continue into the city.")
+            choice = "continue"
         if choice == "continue":
             print("You pay no attention to your first instincts, and you continue on deeper into the city.")
             print("You come to a dead end. Do you go left or right? (Enter 'left' or 'right')")
@@ -35,7 +36,19 @@ if char == "1":
             if dir == 'right':
                 print("You decide to go right. As you walk down the deserted street, you begin to feel many people are watching you.")
                 print("You walk more cautiously now, expecting something could happen at any moment.")
-                print("The road goes on farther than you can see, with no more turns. ")
+                print("The road goes on farther than you can see, with no more turns.")
+                print("Do you turn around or continue on down the road? (Enter 'turn' or 'continue')")
+                choice = input()
+                if choice == "continue":
+                    print("You decide to continue on. As you walk farther along, the air becomes foggy, to the point where you can't see a foot in front of you.")
+                    print("The fog becomes even thicker, and you notice a small red dot piercing through the fog.")
+                    print("The dot begins to pulse and you hear a beeping sound. Suddenly, there is a blinding flash and an ear-splitting squealing noise.")
+                    print("You are thrown backwards, and you lose your vision for a few seconds.")
+                    print("Once you can see again, the fog has cleared.")
+                    print("You get up and look around. All of the buildings have disappeared and you can see your ship in the distance.")
+                    print("Relieved, you run to your ship and get in. You blast off, extremely confused and disoriented.")
+                    print("You hope you can do better on your next mission.")
+                    isGameDone = True
     if dir == "left":
         print("You decide to go left. You walk for what seems like miles, with still nothing other than sand dunes to see.")
         print("Finally, you see something faintly in the distance. It appears to be approaching with great speed.")
