@@ -10,6 +10,7 @@ isGameDone = False
 level = 1
 dir = 0
 dir1 = 0
+overcheck = False
 soldierxp = 100
 healerxp = 100
 soldierinv = []
@@ -230,7 +231,8 @@ if char == "2":
     print("insert story")
     print("insert story")
     dir1 = input()
-if isGameOver == True:
-    print("Thanks for playing, hope you enjoyed!")
-if isGameDone == True:
-    print("Thanks for playing, hope you enjoyed! You can continue your adventure in the next episode.")
+while overcheck != True
+    if isGameOver == True:
+        print("Thanks for playing, hope you enjoyed!")
+    if isGameDone == True:
+        print("Thanks for playing, hope you enjoyed! You can continue your adventure in the next episode.")
